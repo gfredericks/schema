@@ -411,7 +411,7 @@ We welcome contributions in the form of bug reports and pull requests; please se
 
  - https://github.com/metosin/schema-tools has lots of useful utilities for working with schemas
  - https://github.com/cddr/integrity includes a variety of extensions, including helpers for producing error messages suitable for end-users.
- - https://github.com/gfredericks/schema-bijections has support for bijections, which are like a precise, two-way version of coercion, created for use with JSON APIs.
+ - https://github.com/gfredericks/schema-bijections has support for bijections, which are like a precise, two-way version of coercion, aimed at use cases such as JSON APIs.
  - https://github.com/outpace/schema-transit couples Schema to Cognitect's Transit library
 
 If you make something new, please feel free to PR to add it here!
