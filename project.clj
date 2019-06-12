@@ -46,13 +46,7 @@
 
   :test-paths ["target/generated/test/clj" "test/clj"]
 
-  :cljsbuild {:test-commands {"unit" ["node" :runner
-                                      "this.literal_js_was_evaluated=true"
-                                      "target/unit-test.js"]
-                              "unit-no-assert" ["node" :runner
-                                                "this.literal_js_was_evaluated=true"
-                                                "target/unit-test-no-assert.js"]}
-              :builds
+  :cljsbuild {:builds
               [{:id "dev"
                 :source-paths ["src/clj" "target/generated/src/cljs"]
                 :compiler {:output-to "target/main.js"
@@ -73,7 +67,7 @@
                 :assert false
                 :compiler {:output-to "target/unit-test.js"
                            :main schema.test-runner
-                           :optimizations :whitespace
+                           :target :nodejs
                            :pretty-print true}}]}
 
   :codox {:src-uri-mapping {#"target/generated/src/clj" #(str "src/cljx/" % "x")}
