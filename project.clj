@@ -44,7 +44,7 @@
 
   :resource-paths ["target/generated/src/cljs"]
 
-  :test-paths ["target/generated/test/clj" "test/clj"]
+  :test-paths ["target/generated/test/clj" "test/clj" "test/cljs"]
 
   :cljsbuild {:builds
               [{:id "dev"
